@@ -1,0 +1,8 @@
+//read(_Riccardo);
+read(n_1);
+x = 10;
+for( a = 0; a < 10) do
+if a <= 2 then
+print(a*_Riccardo)
+else
+print(n_1 + x)
