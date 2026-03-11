@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class Lexer {
 
@@ -100,19 +99,19 @@ public class Lexer {
 
             case '<':
                 readch(br);
-                if (peek == '=') { 
+                if (peek == '=') {
                     peek = ' ';
                     return Word.le;
                 } else if (peek == '>') {
                     peek = ' ';
                     return Word.ne;
-                } else
+                } else {
                     return Word.lt;
                 }
 
             case '>':
-                readch(br);                    
-                } if (peek == '=') { 
+                readch(br);
+                if (peek == '=') {
                     peek = ' ';
                     return Word.ge;
                 } else {
@@ -216,7 +215,7 @@ public class Lexer {
 
     public static void main(String[] args) {
         Lexer lex = new Lexer();
-        String path = "Prova.txt";
+        String path = "input.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             Token tok;

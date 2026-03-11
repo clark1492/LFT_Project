@@ -290,7 +290,7 @@ public class Translator {
 
     public static void main(String[] args) {
         Lexer lex = new Lexer();
-        String path = "Prova.txt";
+        String path = args.length > 0 ? args[0] : "input.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(path));
             Translator translator = new Translator(lex, br);

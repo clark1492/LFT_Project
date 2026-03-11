@@ -103,7 +103,7 @@ public class Parser {
 	
 	public static void main(String[] args) {
 		Lexer lex = new Lexer();
-		String path = "Prova.txt";
+		String path = "input.txt";
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(path));
 			Parser parser = new Parser(lex, br);
